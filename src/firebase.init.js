@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getAuth} from "firebase/auth"
+import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "tution-provider",
   storageBucket: "tution-provider.appspot.com",
   messagingSenderId: "800057992390",
-  appId: "1:800057992390:web:0f2045ed63b0e01a7063c7"
+  appId: "1:800057992390:web:0f2045ed63b0e01a7063c7",
 };
 
 // Initialize Firebase

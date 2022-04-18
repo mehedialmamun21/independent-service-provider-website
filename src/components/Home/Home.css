@@ -1,0 +1,28 @@
+.home h1{
+    background-color: #83b4d0;
+    text-align: center;
+}
+.home h2{
+    text-align: center;
+}
+.home h3{
+    margin: 40px;
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: #3c3131a4;
+    bottom: 0;    
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3,0fr);
+    gap: 5px;
+    margin: 40px;
+    
+}
+
+.card-individual{
+    border: 2px solid green;
+    
+}
