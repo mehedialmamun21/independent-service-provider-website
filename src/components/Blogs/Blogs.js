@@ -1,8 +1,9 @@
 import React from "react";
+import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div>
+    <div className="blog-details">
       <h2>Difference between authorization and authentication</h2>
       <h5>
         authentication is the process of verifying who someone is, whereas
