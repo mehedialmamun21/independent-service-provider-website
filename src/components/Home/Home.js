@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { Card, CardGroup } from "react-bootstrap";
+import {Card, CardGroup} from "react-bootstrap";
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
+              <button>Book now</button>
             </Card.Body>
           </Card>
           <Card className="card-individual">
@@ -30,6 +31,7 @@ const Home = () => {
                 This card has supporting text below as a natural lead-in to
                 additional content.{" "}
               </Card.Text>
+              <button>Book now</button>
             </Card.Body>
           </Card>
           <Card className="card-individual">
@@ -41,6 +43,7 @@ const Home = () => {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </Card.Text>
+              <button>Book now</button>
             </Card.Body>
           </Card>
         </CardGroup>
