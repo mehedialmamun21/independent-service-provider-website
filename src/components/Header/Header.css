@@ -38,3 +38,11 @@
 .header a:hover{
     color: orange;
 }
+.sign-out{
+    margin-left: 20px;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #00ffffc6;
+}

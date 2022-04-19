@@ -1,19 +1,15 @@
-.home h1{
-    background-color: #83b4d0;
+.home-title{
     text-align: center;
-}
-.home h2{
-    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    margin: 20px 80px;
+    background-color: bisque;
+    padding: 20px ;
 }
 .home h3{
     margin: 40px;
 }
-.footer{
-    height: 50px;
-    width: 100%;
-    background-color: #3c3131a4;
-    bottom: 0;    
-}
+
 .cards{
     display:grid;
     grid-template-columns: repeat(3,0fr);
@@ -21,8 +17,22 @@
     margin: 40px;
     
 }
-
 .card-individual{
     border: 2px solid green;
     
+}
+
+.banner-section{
+    margin: 80px;
+}
+.service-section{
+    margin: 80px;
+}
+
+.footer-section{
+    background-color: gray;
+    height: 200px;
+}
+.footer-text{
+    text-align: center;
 }
