@@ -1,38 +1,65 @@
-.home-title{
+.home h3 {
     text-align: center;
-    font-weight: bold;
-    align-items: center;
-    margin: 20px 80px;
-    background-color: bisque;
-    padding: 20px ;
-}
-.home h3{
-    margin: 40px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
 }
 
-.cards{
-    display:grid;
-    grid-template-columns: repeat(3,0fr);
+.web-title {
+    color: #0e6347f0;
+    font-weight: bold;
+    border: 1px solid #056646;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
     gap: 5px;
     margin: 40px;
-    
+
 }
-.card-individual{
+
+.card-individual {
     border: 2px solid green;
-    
+
 }
 
-.banner-section{
-    margin: 80px;
-}
-.service-section{
+.banner-section {
     margin: 80px;
 }
 
-.footer-section{
-    background-color: gray;
-    height: 200px;
+.service-section {
+    margin: 80px;
 }
-.footer-text{
+
+.additional-portion {
+    margin: 80px;
+}
+
+.additional-portion h2 {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #00a2ff;
+    background-color: #80808039;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.additional-portion small {
+    font-weight: 400;
+}
+
+.rechart-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rechart-img {
+    text-align: center;
+    justify-content: center;
 }

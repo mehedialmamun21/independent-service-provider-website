@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Link, useNavigate} from "react-router-dom";
 import {useSignInWithEmailAndPassword} from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import SocialLogin from "../Login/SocialLogin/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -12,6 +13,15 @@ const Login = () => {
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+    let errorElement;
+    if (error) {
+        
+        errorElement =  <div>
+            <p className='text-danger'>Error: {error.message}</p>
+          </div>
+       
+      }
 
   if (user) {
     navigate("/checkout");
@@ -56,6 +66,9 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
+
+        <p className="text-danger">{errorElement}</p>
+        
         <Button variant="primary" type="submit">
           Submit
         </Button>
@@ -70,6 +83,7 @@ const Login = () => {
           Please Register
         </Link>
       </p>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

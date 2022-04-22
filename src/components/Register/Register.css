@@ -1,12 +1,26 @@
-.register-form{
+.register-form {
     margin: 0 auto;
     width: 50%;
 }
-.register-form input{
+
+.register-form input {
     display: block;
     width: 100%;
     height: 40px;
     padding-left: 10px;
     font-size: 18px;
     margin-bottom: 15px;
+}
+
+.register {
+    background-color: aquamarine;
+    color: gray;
+    font-weight: bold;
+    border: none;
+}
+
+.register-form h2 {
+    background-color: #8080804e;
+    border-radius: 10px;
+    padding: 10px;
 }

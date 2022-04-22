@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# Tution Provider Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://resonant-unicorn-b20392.netlify.app
 
-## Available Scripts
+## User can login by individual email and password.
+## Also can be logged in by Google Sign In Method.
+## User can buy a package clicking on 'Buy now' button, there are 3 packages available here.
+## Others information can be seen in Carousel section about my site.
+## Users can sign out by clicking on 'Sign out' button.
+
+### Frameworks and Libraries :
+
+## Bootstrap
+## CSS
+## React Bootstrap
+## React Bootstrap Hooks
+## Firebase authentication
 
 In the project directory, you can run:
 

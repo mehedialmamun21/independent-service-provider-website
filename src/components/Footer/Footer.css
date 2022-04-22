@@ -1,0 +1,12 @@
+.footer-section {
+    background-color: gray;
+    margin-top: 30px;
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+
+}
+
+.footer-text {
+    text-align: center;
+}

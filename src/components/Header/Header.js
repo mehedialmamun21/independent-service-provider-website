@@ -4,6 +4,7 @@ import "./Header.css";
 import {useAuthState} from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import {signOut} from "firebase/auth";
+import { Container, Nav, Navbar} from "react-bootstrap";
 const Header = () => {
   const [user] = useAuthState(auth);
 
@@ -11,22 +12,35 @@ const Header = () => {
     signOut(auth);
   };
   return (
-    <div className="header">
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/checkout">Checkout</Link>
-        <Link to="/service-detail">Service Detail</Link>
-        <Link to="/blogs">Blogs</Link>
-        <Link to="/about">About Me</Link>
+    <div>
 
-        {user ? (
+      <Navbar  collapseOnSelect  expand="lg" sticky="top" bg="primary" variant="dark">
+  <Container>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/checkout">Checkout</Nav.Link>
+    </Nav>
+    <Nav>
+      <Nav.Link href="/blogs">Blogs</Nav.Link>
+      <Nav.Link eventKey={2} href="/about">
+        About
+      </Nav.Link>
+    </Nav>
+    {user ? (
           <button className="sign-out" onClick={handleSignOut}>
             Sign Out
           </button>
         ) : (
-          <Link to="/login">Login</Link>
+          <div className="log-in">
+            <Link to="/login">Login</Link>
+          </div>
         )}
-      </nav>
+  </Navbar.Collapse>
+  </Container>
+  
+</Navbar>
     </div>
   );
 };
