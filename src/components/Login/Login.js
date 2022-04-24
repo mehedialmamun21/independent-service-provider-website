@@ -27,6 +27,10 @@ const Login = () => {
     navigate("/checkout");
   }
 
+  // if (user) {
+  //   window.location.href = "/checkout";
+  // }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const email = emailRef.current.value;

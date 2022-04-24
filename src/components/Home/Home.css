@@ -1,3 +1,7 @@
+.home {
+    min-height: 100vh;
+}
+
 .home h3 {
     text-align: center;
     justify-content: center;

@@ -1,8 +1,18 @@
 .checkout-details h2 {
     text-align: center;
     margin-top: 20px;
+    border: 2px solid gray;
+    padding: 5px;
+    background-color: aquamarine;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.checkout-details h3 {
+    margin-bottom: 200px;
+    text-align: center;
 }
 
 .checkout-details {
-    height: 500px;
+    min-height: 100vh;
 }

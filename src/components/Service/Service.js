@@ -1,8 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
     const {packageName,img,price,description} = service;
+
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
             <div class="card" style={{width: '18rem'}}>
