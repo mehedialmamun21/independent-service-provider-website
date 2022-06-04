@@ -1,12 +1,12 @@
-import React from "react";
-import {Link, useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Register.css";
-import {useCreateUserWithEmailAndPassword} from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import SocialLogin from "../Login/SocialLogin/SocialLogin";
 
+
 const Register = () => {
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, user] =
     useCreateUserWithEmailAndPassword(auth);
 
   const navigate = useNavigate();
@@ -17,24 +17,25 @@ const Register = () => {
 
   let registeredElement;
   if (user) {
-    registeredElement =  <div>
-            <p className='text-success font-weight-bold'>Registration Successful ; go to Login page to login</p>
-          </div>
-
+    registeredElement =
+      <div>
+        <p className='text-success font-weight-bold'>Registration Successful ; go to Login page to login</p>
+      </div>
   }
 
   const handleRegister = (event) => {
     event.preventDefault();
-    // console.log(event.target.email.value);
+
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    createUserWithEmailAndPassword(email, password)
 
-    createUserWithEmailAndPassword(email, password);
-  };
+  }
+
   return (
     <div className="register-form">
-      <h2 style={{textAlign: "center"}} className="text-primary text-center mt-4" >Please Register</h2>
+      <h2 style={{ textAlign: "center" }} className="text-primary text-center mt-4" >Please Register</h2>
       <form onSubmit={handleRegister}>
         <input type="text" name="name" id="" placeholder="your name" />
 
